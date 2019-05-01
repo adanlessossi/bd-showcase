@@ -17,6 +17,10 @@ public class CurrencyConversionServiceApplication {
 		SpringApplication.run(CurrencyConversionServiceApplication.class, args);
 	}
 
+	/**
+	 * Enables Spring Cloud Sleuth.
+	 * @return the sampler
+	 */
 	@Bean
 	public Sampler defaultSampler() {
 		return Sampler.ALWAYS_SAMPLE;

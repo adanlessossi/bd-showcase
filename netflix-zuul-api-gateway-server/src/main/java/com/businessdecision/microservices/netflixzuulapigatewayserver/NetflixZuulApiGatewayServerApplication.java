@@ -17,6 +17,10 @@ public class NetflixZuulApiGatewayServerApplication {
 		SpringApplication.run(NetflixZuulApiGatewayServerApplication.class, args);
 	}
 
+	/**
+	 * Enables Spring Cloud Sleuth on the Gateway.
+	 * @return the sampler
+	 */
 	@Bean
 	public Sampler defaultSampler() {
 		return Sampler.ALWAYS_SAMPLE;
