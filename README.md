@@ -79,7 +79,7 @@ Kill the currency exchange service running on port 8000. You will see that traff
 
 ## Author
 
-* **Bernard Adanlessossi** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Bernard Adanlessossi**
 
 ## License
 
