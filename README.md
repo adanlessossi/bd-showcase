@@ -1,4 +1,4 @@
-# Microservices with Spring Boot and Spring Cloud
+# Microservices Showcase with Spring Boot and Spring Cloud
 Business &amp; Decision Showcase using Spring Boot and Spring Cloud. What we have done here is:
 
 * Simplified Microservices Communication using Feign REST Client
