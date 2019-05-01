@@ -11,9 +11,6 @@ HELP.md
 .springBeans
 .sts4-cache
 
-### Eclipse & Spring Tool Suite ###
-.metadata
-
 ### IntelliJ IDEA ###
 .idea
 *.iws
