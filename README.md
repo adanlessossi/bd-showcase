@@ -81,6 +81,11 @@ Kill the currency exchange service running on port 8000. You will see that traff
 ## Built With
 
 * [Springframework](https://spring.io/) - The framework used
+* [Spring Cloud Netflix](https://spring.io/projects/spring-cloud-netflix) - Service Discovery (Eureka), Circuit Breaker (Hystrix), Intelligent Routing (Zuul) and Client Side Load Balancing (Ribbon)
+* [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway) - Provides a simple, yet effective way to route to APIs and provide cross cutting concerns to them such as: security, monitoring/metrics, and resiliency
+* [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth) - Implements a distributed tracing solution for Spring Cloud
+* [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign) - Provides API autoconfiguration and binding
+* [Spring Cloud Config](https://spring.io/projects/spring-cloud-config) - Provides server and client-side support for externalized configuration in a distributed system
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Author
