@@ -12,9 +12,6 @@ Business &amp; Decision Showcase using Spring Boot and Spring Cloud. What we hav
 The Overview looks like the following:
 Architecture:
 ![The Architecture](file://assets/spring-cloud-route.PNG "The Architecture")
-![alt text][arch]
-
-[arch]: assets/spring-cloud-route.PNG "The Architecture"
 
 ## Getting Started
 
