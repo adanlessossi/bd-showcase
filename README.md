@@ -10,7 +10,7 @@ Business &amp; Decision Showcase using Spring Boot and Spring Cloud. What we hav
 * Fault Tolerance with Zipkin
 
 The Overview looks like the following:
-Architecture:
+
 ![alt text][arch]
 
 [arch]: assets/spring-cloud-route.PNG "The Architecture"
