@@ -9,6 +9,13 @@ Business &amp; Decision Showcase using Spring Boot and Spring Cloud. What we hav
 * Distributed Tracing using Spring Cloud Sleuth and Zipkin
 * Fault Tolerance with Zipkin
 
+The Overview looks like the following:
+Architecture:
+![The Architecture](file://assets/spring-cloud-route.PNG "The Architecture")
+![alt text][arch]
+
+[arch]: assets/spring-cloud-route.PNG "The Architecture"
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
