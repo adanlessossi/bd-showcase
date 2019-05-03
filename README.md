@@ -73,6 +73,8 @@ With Feign, you should realize that the port that is serving the Conversion is c
 ### The Zipkin Distributed Tracing
 The Zipkin Distributed Tracing runs on <http://localhost:9411> and helps gather timing data needed to troubleshoot latency problems in microservice architectures.
 
+Data is gathered in a RabbitMQ Queue and consumed by the Distributed Tracing Server (Zipkin). Data are then displayed in the Zipkin Dashboard
+
 ![alt text][zipkin]
 
 [zipkin]: assets/distributed_tracing.PNG "The Zipkin Distributed Tracing"
