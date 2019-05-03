@@ -103,9 +103,9 @@ Kill the currency exchange service running on port 8000. You will see that traff
 * [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth) - Implements a distributed tracing solution for Spring Cloud
 * [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign) - Provides API autoconfiguration and binding
 * [Spring Cloud Config](https://spring.io/projects/spring-cloud-config) - Provides server and client-side support for externalized configuration in a distributed system
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Zipkin](https://zipkin.io/) - Distributed Tracing
-* [RabbitMQ](https://www.rabbitmq.com/) - Message Broker
+* [Maven](https://maven.apache.org/) - Java Dependency Management
+* [Zipkin](https://zipkin.io/) - Provides Distributed Tracing
+* [RabbitMQ](https://www.rabbitmq.com/) - Open Source Message Broker
 
 ## Author
 
