@@ -73,11 +73,19 @@ With Feign, you should realize that the port that is serving the Conversion is c
 ### The Zipkin Distributed Tracing
 The Zipkin Distributed Tracing runs on <http://localhost:9411> and helps gather timing data needed to troubleshoot latency problems in microservice architectures.
 
-Data is gathered in a RabbitMQ Queue and consumed by the Distributed Tracing Server (Zipkin). Data are then displayed in the Zipkin Dashboard
-
 ![alt text][zipkin]
 
 [zipkin]: assets/distributed_tracing.PNG "The Zipkin Distributed Tracing"
+
+You will need to execute the zipkin.jar
+```
+    curl -sSL https://zipkin.io/quickstart.sh | bash -s
+    java -jar zipkin.jar
+```
+You also need to install RabbitMQ and run the rabbitmq-server.bat/sh
+
+Data is then gathered in a RabbitMQ Queue and consumed by the Distributed Tracing Server (Zipkin). Data are then displayed in the Zipkin Dashboard
+
 
 ### Testing Service Failure
 * Run many instances of Currency Exchange Service on ports 8000, 8001, 8002, etc...
@@ -96,6 +104,8 @@ Kill the currency exchange service running on port 8000. You will see that traff
 * [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign) - Provides API autoconfiguration and binding
 * [Spring Cloud Config](https://spring.io/projects/spring-cloud-config) - Provides server and client-side support for externalized configuration in a distributed system
 * [Maven](https://maven.apache.org/) - Dependency Management
+* [Zipkin](https://zipkin.io/) - Distributed Tracing
+* [RabbitMQ](https://www.rabbitmq.com/) - Message Broker
 
 ## Author
 
