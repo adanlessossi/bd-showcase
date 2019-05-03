@@ -70,6 +70,13 @@ There are two versions of the API. One with Netflix-Feign and the other without.
 
 With Feign, you should realize that the port that is serving the Conversion is changing (After browser refresh)
 
+### The Zipkin Distributed Tracing
+The Zipkin Distributed Tracing runs on <http://localhost:9411> and helps gather timing data needed to troubleshoot latency problems in microservice architectures.
+
+![alt text][zipkin]
+
+[zipkin]: assets/distributed_tracing.PNG "The Zipkin Distributed Tracing"
+
 ### Testing Service Failure
 * Run many instances of Currency Exchange Service on ports 8000, 8001, 8002, etc...
 * Run many instances of Currency Conversion Service on ports 8100, 8101, 8102, etc...
