@@ -71,7 +71,7 @@ There are two versions of the API. One with Netflix-Feign and the other without.
 With Feign, you should realize that the port that is serving the Conversion is changing (After browser refresh)
 
 ### The Zipkin Distributed Tracing
-The Zipkin Distributed Tracing runs on <http://localhost:9411> and helps gather timing data needed to troubleshoot latency problems in microservice architectures.
+The Zipkin Distributed Tracing runs on <http://localhost:9411/zipkin> and helps gather timing data needed to troubleshoot latency problems in microservice architectures.
 
 ![alt text][zipkin]
 
@@ -84,7 +84,7 @@ You will need to execute the zipkin.jar
 ```
 You also need to install RabbitMQ and run the rabbitmq-server.bat/sh
 
-Data is then gathered in a RabbitMQ Queue and consumed by the Distributed Tracing Server (Zipkin). Data are then displayed in the Zipkin Dashboard
+Data is then gathered in a RabbitMQ Queue and consumed by the Distributed Tracing Server (Zipkin). Data are then displayed in the Zipkin Dashboard at <http://localhost:9411/zipkin>
 
 
 ### Testing Service Failure
