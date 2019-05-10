@@ -36,10 +36,10 @@ public class ExchangeValue {
 
 	/**
 	 * Creates this with parameters.
-	 * @param id
-	 * @param from
-	 * @param to
-	 * @param conversionMultiple
+	 * @param id the id
+	 * @param from the 'from'
+	 * @param to the 'to'
+	 * @param conversionMultiple the conversion multiplier
 	 */
 	public ExchangeValue(Long id, String currencyfrom, String currencyto, BigDecimal conversionMultiple) {
 		super();
@@ -50,6 +50,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Gets the id.
 	 * @return the id
 	 */
 	public Long getId() {
@@ -57,6 +58,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Sets the id.
 	 * @param id the id to set
 	 */
 	public void setId(Long id) {
@@ -64,6 +66,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Gets the 'from'.
 	 * @return the from
 	 */
 	public String getCurrencyfrom() {
@@ -71,6 +74,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Sets the 'from'.
 	 * @param from the from to set
 	 */
 	public void setCurrencyfrom(String currencyfrom) {
@@ -78,6 +82,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Gets the 'to'.
 	 * @return the to
 	 */
 	public String getCurrencyto() {
@@ -85,6 +90,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Sets the 'to'.
 	 * @param to the to to set
 	 */
 	public void setCurrencyto(String currencyto) {
@@ -92,6 +98,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Gets the conversion multiplier.
 	 * @return the conversionMultiple
 	 */
 	public BigDecimal getConversionMultiple() {
@@ -99,6 +106,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Sets the conversion multiplier.
 	 * @param conversionMultiple the conversionMultiple to set
 	 */
 	public void setConversionMultiple(BigDecimal conversionMultiple) {
@@ -106,6 +114,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Gets the port.
 	 * @return the port
 	 */
 	public int getPort() {
@@ -113,6 +122,7 @@ public class ExchangeValue {
 	}
 
 	/**
+	 * Sets the port.
 	 * @param port the port to set
 	 */
 	public void setPort(int port) {

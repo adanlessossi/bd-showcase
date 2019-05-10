@@ -18,6 +18,7 @@ import com.businessdecision.microservices.currencyconversionservice.domain.Curre
 import com.businessdecision.microservices.currencyconversionservice.proxy.CurrencyExchangeServiceProxy;
 
 /**
+ * REST Controller for the currency conversion.
  * @author bernard.adanlessossi
  *
  */
@@ -27,6 +28,13 @@ public class CurrencyConversionController {
 	@Autowired
 	private CurrencyExchangeServiceProxy proxy;
 
+	/**
+	 * Converts an amount from a currency to another.
+	 * @param currencyfrom the 'from' currency
+	 * @param currencyto the 'to' currency
+	 * @param amount the amount to be converted
+	 * @return a conversion bean
+	 */
 	@GetMapping("/currency-converter/from/{currencyfrom}/to/{currencyto}/amount/{amount}")
 	public CurrencyConversionBean convertCurrency(@PathVariable String currencyfrom, @PathVariable String currencyto,
 			@PathVariable BigDecimal amount) {
@@ -44,6 +52,13 @@ public class CurrencyConversionController {
 				amount, amount.multiply(response.getConversionMultiple()), response.getPort());
 	}
 
+	/**
+	 * Converts an amount from a currency to another using {@link Feign}.
+	 * @param currencyfrom the 'from' currency
+	 * @param currencyto the 'to' currency
+	 * @param amount the amount to be converted
+	 * @return a conversion bean
+	 */
 	@GetMapping("/currency-converter-feign/from/{currencyfrom}/to/{currencyto}/amount/{amount}")
 	public CurrencyConversionBean convertCurrencyFeign(@PathVariable String currencyfrom, @PathVariable String currencyto,
 			@PathVariable BigDecimal amount) {

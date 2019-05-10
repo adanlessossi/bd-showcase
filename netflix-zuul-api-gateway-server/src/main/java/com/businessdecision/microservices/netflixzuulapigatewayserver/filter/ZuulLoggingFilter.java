@@ -14,11 +14,13 @@ import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 
 /**
+ * An implementation of the {@link ZuulFilter}.
+ * 
  * @author bernard.adanlessossi
  *
  */
 @Component
-public class ZuulLogginFilter extends ZuulFilter {
+public class ZuulLoggingFilter extends ZuulFilter {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -36,6 +38,7 @@ public class ZuulLogginFilter extends ZuulFilter {
 
 	@Override
 	public String filterType() {
+		// Filter before each request
 		return "pre";
 	}
 

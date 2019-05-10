@@ -13,7 +13,7 @@ import com.businessdecision.microservices.currencyexchangeservice.domain.Exchang
 import com.businessdecision.microservices.currencyexchangeservice.repository.ExchangeValueRepository;
 
 /**
- * Currency Exchange endpoint.
+ * Currency Exchange Rest endpoint.
  * 
  * @author bernard.adanlessossi
  *
@@ -27,6 +27,12 @@ public class CurrencyExchangeController {
 	@Autowired
 	private ExchangeValueRepository repository;
 
+	/**
+	 * Exchanges a from a currency to another.
+	 * @param from the 'from' currency
+	 * @param to the 'to' currency
+	 * @return the exchange value
+	 */
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public ExchangeValue getExchangeValue(@PathVariable String from, @PathVariable String to) {
 		
