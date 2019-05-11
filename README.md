@@ -1,5 +1,5 @@
 # Microservices Showcase with Spring Boot and Spring Cloud
-Business &amp; Decision Showcase using Spring Boot and Spring Cloud. What we have done here is:
+Business &amp; Decision Showcase using Spring Boot and Spring Cloud (mainly Netflix). What we have done here is:
 
 * Simplified Microservices Communication using Feign REST Client
 * Centralized Microservice Configuration with Spring Cloud Config Server
@@ -7,7 +7,7 @@ Business &amp; Decision Showcase using Spring Boot and Spring Cloud. What we hav
 * Dynamic scaling using Netflix Eureka and Ribbon
 * API Gateway using Netflix Zuul
 * Distributed Tracing using Spring Cloud Sleuth and Zipkin
-* Fault Tolerance with Zipkin
+* Fault Tolerance with Hystrix
 
 The Overview looks like the following:
 
