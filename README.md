@@ -121,4 +121,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Thomas Wenger, JUG-Bern, Switzerland
-* Business &amp Decision, <http://businessdecision.ch>
+* Business & Decision, <http://businessdecision.ch>
