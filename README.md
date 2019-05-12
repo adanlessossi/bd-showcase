@@ -77,12 +77,14 @@ The Zipkin Distributed Tracing runs on <http://localhost:9411/zipkin> and helps 
 
 [zipkin]: assets/distributed_tracing.PNG "The Zipkin Distributed Tracing"
 
-You will need to execute the zipkin.jar
+To execute the Distributed Tracing You also need to install RabbitMQ from <https://www.rabbitmq.com/install-windows.html> and run the rabbitmq-server.bat/sh in the sbin folder.
+
+To execute the zipkin.jar, run the following commands:
 ```
+    set RABBIT_URI=amqp://localhost
     curl -sSL https://zipkin.io/quickstart.sh | bash -s
     java -jar zipkin.jar
 ```
-You also need to install RabbitMQ and run the rabbitmq-server.bat/sh
 
 Data is then gathered in a RabbitMQ Queue and consumed by the Distributed Tracing Server (Zipkin). Data are then displayed in the Zipkin Dashboard at <http://localhost:9411/zipkin>
 
@@ -107,9 +109,10 @@ Kill the currency exchange service running on port 8000. You will see that traff
 * [Zipkin](https://zipkin.io/) - Provides Distributed Tracing
 * [RabbitMQ](https://www.rabbitmq.com/) - Open Source Message Broker
 
-## Author
+## Authors
 
 * **Bernard Adanlessossi**
+* **Thomas Wenger**, Contributor
 
 ## License
 
@@ -118,3 +121,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Thomas Wenger, JUG-Bern, Switzerland
+* Business &amp Decision, <http://businessdecision.ch>
